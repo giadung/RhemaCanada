@@ -11,12 +11,14 @@ export const ServicesContainer = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    padding-top: 125px;
+    height: 100%;
+    margin-bottom: 70px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1100px;
-    padding-top: 150px;
+    height: 100%;
+    margin-bottom: 70px;
   }
 `
 
@@ -65,6 +67,7 @@ export const ServicesCard = styled.a`
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  animation: 1s ease-out 0s 1 SlideUp;
 
   &:hover {
     transform: scale(1.02);

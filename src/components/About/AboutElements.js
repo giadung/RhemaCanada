@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
   height: 860px;
-  padding-top: 175px;
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,12 +10,13 @@ export const AboutContainer = styled.div`
   box-shadow: 0 500px 0 0 #008adb inset;
 
   @media screen and (max-width: 768px) {
-    height: 1200px;
+    height: 100%;
+    margin-bottom: 70px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1200px;
-    padding-top: 150px;
+    height: 100%;
+    margin-bottom: 70px;
   }
 `
 
@@ -62,6 +63,7 @@ export const AboutCard = styled.a`
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  animation: 1s ease-out 0s 1 SlideUp;
 
   &:hover {
     cursor: pointer;

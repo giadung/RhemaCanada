@@ -11,11 +11,10 @@ export const StrategyContainer = styled.div`
 export const StrategyWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 850px;
+  height: 880px;
   width: 100%;
 
   @media screen and (max-width: 480px) {
-    width: 100%;
     height: 100%;
   }
 `
@@ -75,11 +74,11 @@ export const Subtitle = styled.p`
   font-size: 15px;
   line-height: 1.4;
   letter-spacing: 1.4px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 
   @media screen and (max-width: 480px) {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 `
 

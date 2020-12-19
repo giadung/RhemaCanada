@@ -1,36 +1,35 @@
 import styled from 'styled-components'
-import { FaChurch } from 'react-icons/fa'
-import { IoIosSchool } from 'react-icons/io'
-import { FaCubes } from 'react-icons/fa'
 
-export const ServicesContainer = styled.div`
-  height: 870px;
+export const AboutContainer = styled.div`
+  height: 860px;
   padding-top: 175px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: linear-gradient(#008adb 60%, transparent 60%) no-repeat; */
+  box-shadow: 0 500px 0 0 #008adb inset;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 1200px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1100px;
+    height: 1200px;
     padding-top: 150px;
   }
 `
 
-export const ServicesH1 = styled.h1`
+export const AboutH1 = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 64px;
-  color: #008adb;
+  color: #fff;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
 `
 
-export const ServicesWrapper = styled.div`
+export const AboutWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -54,53 +53,27 @@ export const ServicesWrapper = styled.div`
   }
 `
 
-export const ServicesCard = styled.a`
+export const AboutCard = styled.a`
   color: #5a596a;
   background: #f7f8fa;
   align-items: center;
   border-radius: 10px;
-  width: 280px;
-  max-height: 340px;
-  padding: 80px;
+  padding: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background: #008adb;
-    color: #fff;
+    box-shadow: 5px 10px 20px 4px rgba(0, 0, 0, 0.12);
   }
 `
 
-export const ChurchIcon = styled(FaChurch)`
-  font-size: 60px;
-  padding-bottom: 20px;
-  display: block;
-  margin: auto;
-`
-
-export const SchoolIcon = styled(IoIosSchool)`
-  font-size: 60px;
-  padding-bottom: 20px;
-  display: block;
-  margin: auto;
-`
-
-export const FoundationIcon = styled(FaCubes)`
-  font-size: 60px;
-  padding-bottom: 20px;
-  display: block;
-  margin: auto;
-`
-
-export const ServicesH3 = styled.h3`
-  margin-bottom: 10px;
+export const AboutH2 = styled.h2`
   text-align: center;
-  position: relative;
+  margin: 32px auto;
   padding-bottom: 24px;
+  position: relative;
 
   :before {
     content: '';
@@ -110,4 +83,10 @@ export const ServicesH3 = styled.h3`
     width: 33%;
     border-bottom: 1px solid;
   }
+`
+
+export const AboutP = styled.p`
+  font-size: 15px;
+  text-align: center;
+  padding: 0 20px 30px 20px;
 `

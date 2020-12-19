@@ -1,12 +1,13 @@
 import React from 'react'
 import {
-  IconWrapper,
-  ChurchIcon,
-  ServicesCard,
   ServicesContainer,
   ServicesH1,
-  ServicesH2,
-  ServicesWrapper
+  ServicesWrapper,
+  ServicesCard,
+  ChurchIcon,
+  SchoolIcon,
+  FoundationIcon,
+  ServicesH3
 } from './ServicesElements'
 
 const Services = () => {
@@ -14,17 +15,17 @@ const Services = () => {
     <ServicesContainer id='services'>
       <ServicesH1>What We Do</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard>
+        <ServicesCard href='https://rhemaonline.ca' target='_blank'>
           <ChurchIcon />
-          <ServicesH2>Church</ServicesH2>
+          <ServicesH3>Church</ServicesH3>
         </ServicesCard>
-        <ServicesCard>
-          {/* <ServicesIcon src={Icon2} /> */}
-          <ServicesH2>Education</ServicesH2>
+        <ServicesCard href='http://kingscollegepsc.ca' target='_blank'>
+          <SchoolIcon />
+          <ServicesH3>Education</ServicesH3>
         </ServicesCard>
-        <ServicesCard>
-          {/* <ServicesIcon src={Icon3} /> */}
-          <ServicesH2>Foundation</ServicesH2>
+        <ServicesCard href='http://rfcanada.org' target='_blank'>
+          <FoundationIcon />
+          <ServicesH3>Foundation</ServicesH3>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import {
   CloseIcon,
   Icon,
@@ -8,7 +8,7 @@ import {
   SidebarRoute,
   SidebarWrapper,
   SideBtnWrap
-} from './SidebarElements'
+} from "./SidebarElements"
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -35,7 +35,12 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/' onClick={toggle}>
+          <SidebarRoute
+            href='https://rhemaonline.ca/facility-bookings/'
+            alt='Book An Event'
+            target='_blank'
+            onClick={toggle}
+          >
             Book An Event
           </SidebarRoute>
         </SideBtnWrap>

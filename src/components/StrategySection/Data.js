@@ -3,10 +3,9 @@ export const strategyObj = {
   lightBg: 'false',
   blueHeader: 'true',
   header: 'Corporate Strategy',
-  subtitle: '01. Supporting Spiritual Excellence',
-  description:
-    'Deliver with excellence a Spirit-filled worship & ministry experience that is innovative, relevant and that serves broader communities.',
+  subtitle:
+    'Our corporate strategy puts forth our global priorities while giving shape to the future of our organization as we seek to transform lives, sustain positive human growth and create a better world for future generations:',
   imgStart: 'false',
-  img: require('../../images/strategy.svg'),
+  img: require('../../images/strategy.jpg'),
   alt: 'Corporate Strategy'
 }

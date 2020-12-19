@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import {
   HeroBg,
   HeroContainer,
   VideoBg,
   HeroContent,
   HeroH1,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
-} from './HeroElements'
-import { Button } from '../ButtonElements'
-import Video from '../../videos/Video.mp4'
+  HeroP
+  // HeroBtnWrapper,
+  // ArrowForward,
+  // ArrowRight,
+} from "./HeroElements"
+// import { Button } from "../ButtonElements"
+import Video from "../../videos/Video.mp4"
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
@@ -20,7 +20,7 @@ const HeroSection = () => {
   }
 
   return (
-    <HeroContainer>
+    <HeroContainer id='hero'>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
@@ -33,7 +33,7 @@ const HeroSection = () => {
           of poverty receive quality education and supporting the embodiment of
           spiritual excellence.
         </HeroP>
-        <HeroBtnWrapper>
+        {/* <HeroBtnWrapper>
           <Button
             to='signup'
             onMouseEnter={onHover}
@@ -43,7 +43,7 @@ const HeroSection = () => {
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   )

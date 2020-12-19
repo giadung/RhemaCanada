@@ -17,7 +17,19 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>Rhema Canada</NavLogo>
+          <NavLogo
+            to='hero'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+          >
+            <img
+              src={require('../../images/rhema-logo.png').default}
+              alt='Rhema Canada'
+            />
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -35,28 +47,60 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='about' smooth={true}>
+              <NavLinks
+                to='about'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+              >
                 About Us
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='leadership' smooth={true}>
+              <NavLinks
+                to='leadership'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+              >
                 Leadership
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='strategy' smooth={true}>
+              <NavLinks
+                to='strategy'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+              >
                 Corporate Strategy
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='contact' smooth={true}>
+              <NavLinks
+                to='contact'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+              >
                 Contact Us
               </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/' smooth={true}>
+            <NavBtnLink
+              href='https://rhemaonline.ca/facility-bookings/'
+              alt='Book An Event'
+              target='_blank'
+            >
               Book An Event
             </NavBtnLink>
           </NavBtn>

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
+import styled from "styled-components"
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md"
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -7,13 +7,13 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: calc(100vh - 240px);
   position: relative;
   z-index: 1;
 
   /* Add: before styles */
   :before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -26,6 +26,10 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: calc(100vh - 200px);
   }
 `
 
@@ -50,42 +54,72 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: 600px;
   position: absolute;
-  padding: 8px 24px;
+  bottom: 100px;
+  right: 10%;
+  padding: 50px 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-`
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  animation: 1s ease-out 0s 1 SlideUp;
 
-export const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
+  @media screen and (max-width: 1024px) {
+    bottom: 7%;
+    right: 5%;
+  }
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    bottom: 20px;
+    right: 20px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 40px 40px;
+  }
+`
+
+export const HeroH1 = styled.h1`
+  color: #008adb;
+  text-align: left;
+  animation: 1s ease-out 0s 1 SlideUp;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
   }
 `
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: #fff;
-  font-size: 20px;
-  line-height: 1.3;
-  text-align: center;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.4;
   max-width: 600px;
+  animation: 1s ease-out 0s 1 SlideUp;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 1.2rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 0.9rem;
+    margin-top: 10px;
   }
 `
 

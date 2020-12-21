@@ -10,11 +10,6 @@ import {
 import Video from '../../videos/Video.mp4'
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false)
-  const onHover = () => {
-    setHover(!hover)
-  }
-
   return (
     <HeroContainer id='hero'>
       <HeroBg>

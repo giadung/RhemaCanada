@@ -23,13 +23,8 @@ export const ServicesContainer = styled.div`
 `
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
   margin-bottom: 64px;
-  color: #008adb;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }
+  color: var(--blue);
 `
 
 export const ServicesWrapper = styled.div`
@@ -57,8 +52,8 @@ export const ServicesWrapper = styled.div`
 `
 
 export const ServicesCard = styled.a`
-  color: #5a596a;
-  background: #f7f8fa;
+  color: var(--text-color);
+  background: var(--light-grey);
   align-items: center;
   border-radius: 10px;
   width: 280px;
@@ -73,7 +68,7 @@ export const ServicesCard = styled.a`
     transform: scale(1.02);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background: #008adb;
+    background: var(--blue);
     color: #fff;
   }
 `

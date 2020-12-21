@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StrategyContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? '#fff' : '#F7F8FA')};
+  background: ${({ lightBg }) => (lightBg ? '#fff' : 'var(--light-grey)')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0 0 0;
@@ -9,20 +9,11 @@ export const StrategyContainer = styled.div`
 `
 
 export const StrategyWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 880px;
+  height: 870px;
   width: 100%;
-
-  @media screen and (max-width: 480px) {
-    height: 100%;
-  }
-`
-
-export const StrategyRow = styled.div`
   display: grid;
   grid-template-columns: 7fr 5fr;
-  grid-gap: 20px;
+  grid-gap: 52px;
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -30,6 +21,10 @@ export const StrategyRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
   }
 `
 
@@ -59,22 +54,15 @@ export const TextWrapper = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 12px;
-  font-size: 48px;
   line-height: 1.15;
-  font-weight: 600;
-  color: #1e1e27;
-
-  @media screen and (max-width: 480px) {
-    font-size: 48px;
-    line-height: 1.15;
-  }
+  color: var(--dark-grey);
 `
 
 export const Subtitle = styled.p`
   font-size: 15px;
   line-height: 1.4;
   letter-spacing: 1.4px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 480px) {
     font-size: 14px;
@@ -105,7 +93,7 @@ export const STextWrapper = styled.div`
 `
 
 export const Number = styled.p`
-  color: #008adb;
+  color: var(--blue);
   width: 32px;
   font-size: 32px;
   font-weight: 600;
@@ -113,8 +101,9 @@ export const Number = styled.p`
 `
 
 export const SubTitle = styled.h2`
-  color: #008adb;
-  font-size: 19px;
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 600;
   margin-top: 5px;
   margin-bottom: 8px;
 `

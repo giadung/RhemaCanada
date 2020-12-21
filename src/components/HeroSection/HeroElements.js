@@ -1,19 +1,17 @@
-import styled from "styled-components"
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md"
+import styled from 'styled-components'
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
   height: calc(100vh - 240px);
   position: relative;
-  z-index: 1;
 
   /* Add: before styles */
   :before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -25,7 +23,7 @@ export const HeroContainer = styled.div`
         rgba(0, 0, 0, 0.6) 100%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
+    z-index: 1;
   }
 
   @media screen and (max-width: 480px) {
@@ -49,11 +47,11 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  background: var(--grey);
 `
 
 export const HeroContent = styled.div`
-  z-index: 3;
+  z-index: 2;
   max-width: 600px;
   position: absolute;
   bottom: 100px;
@@ -84,7 +82,9 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
-  color: #008adb;
+  color: var(--blue);
+  font-size: 32px;
+  font-weight: 700;
   text-align: left;
   animation: 1s ease-out 0s 1 SlideUp;
 

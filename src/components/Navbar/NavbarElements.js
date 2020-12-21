@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   font-weight: 500;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 3;
   box-shadow: 0px 12px 45px 0px rgba(0, 0, 0, 0.09);
 
   @media screen and (max-width: 960px) {
@@ -24,7 +24,6 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
@@ -76,7 +75,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 4px solid #008adb;
+    border-bottom: 4px solid var(--blue);
     transition: 0.2s;
   }
 `
@@ -92,7 +91,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled.a`
   border-radius: 100px;
-  background: #008adb;
+  background: var(--blue);
   white-space: nowrap;
   padding: 10px 22px;
   color: #fff;
@@ -101,9 +100,10 @@ export const NavBtnLink = styled.a`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 
   &:hover {
     transition: all 0.3s ease-in-out;
-    background: #0a6faa;
+    background: var(--dark-blue);
   }
 `

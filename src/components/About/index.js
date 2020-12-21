@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AboutModal from '../AboutModal'
 import {
   AboutContainer,
   AboutH1,
@@ -9,6 +10,12 @@ import {
 } from './AboutElements'
 
 const About = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const openModal = () => {
+    setShowModal((show) => !show)
+  }
+
   return (
     <AboutContainer id='about'>
       <AboutH1>About Us</AboutH1>
@@ -25,7 +32,7 @@ const About = () => {
             </b>
           </AboutP>
         </AboutCard>
-        <AboutCard href='http://kingscollegepsc.ca' target='_blank'>
+        <AboutCard onClick={openModal}>
           <AboutH2>Our Vision</AboutH2>
           <AboutP>
             Our vision is the continuity of the ministry of Jesus Christ and can
@@ -36,7 +43,8 @@ const About = () => {
             <u>Learn More</u>
           </AboutP>
         </AboutCard>
-        <AboutCard href='http://rfcanada.org' target='_blank'>
+        <AboutModal showModal={showModal} setShowModal={setShowModal} />
+        <AboutCard>
           <AboutH2>Core Values</AboutH2>
           <AboutP>
             Our core values give shape to our organizational culture while

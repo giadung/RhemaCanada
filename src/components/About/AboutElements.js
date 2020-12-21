@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-  height: 860px;
+  height: 870px;
   padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* background: linear-gradient(#008adb 60%, transparent 60%) no-repeat; */
-  box-shadow: 0 500px 0 0 #008adb inset;
+  box-shadow: 0 500px 0 0 var(--blue) inset;
 
   @media screen and (max-width: 768px) {
     height: 100%;
@@ -21,13 +21,8 @@ export const AboutContainer = styled.div`
 `
 
 export const AboutH1 = styled.h1`
-  font-size: 2.5rem;
   margin-bottom: 64px;
   color: #fff;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }
 `
 
 export const AboutWrapper = styled.div`
@@ -55,8 +50,7 @@ export const AboutWrapper = styled.div`
 `
 
 export const AboutCard = styled.a`
-  color: #5a596a;
-  background: #f7f8fa;
+  background: var(--light-grey);
   align-items: center;
   border-radius: 10px;
   padding: 30px;

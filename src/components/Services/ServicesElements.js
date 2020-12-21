@@ -5,7 +5,7 @@ import { FaCubes } from 'react-icons/fa'
 
 export const ServicesContainer = styled.div`
   height: 870px;
-  padding-top: 175px;
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;

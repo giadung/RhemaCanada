@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import {
   HeroBg,
   HeroContainer,
@@ -6,12 +6,8 @@ import {
   HeroContent,
   HeroH1,
   HeroP
-  // HeroBtnWrapper,
-  // ArrowForward,
-  // ArrowRight,
-} from "./HeroElements"
-// import { Button } from "../ButtonElements"
-import Video from "../../videos/Video.mp4"
+} from './HeroElements'
+import Video from '../../videos/Video.mp4'
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
@@ -33,17 +29,6 @@ const HeroSection = () => {
           of poverty receive quality education and supporting the embodiment of
           spiritual excellence.
         </HeroP>
-        {/* <HeroBtnWrapper>
-          <Button
-            to='signup'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary='true'
-            dark='true'
-          >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   )

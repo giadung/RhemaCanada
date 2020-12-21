@@ -61,7 +61,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
-  animation: 1s ease-out 0s 1 slideUp;
+  animation: slideUp 1s ease-out 0s 1;
 
   @media screen and (max-width: 1024px) {
     bottom: 7%;

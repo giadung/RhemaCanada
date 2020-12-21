@@ -23,7 +23,7 @@ const Navbar = ({ toggle }) => {
             duration={500}
             spy={true}
             exact='true'
-            offset={-85}
+            offset={-78}
           >
             <img
               src={require('../../images/rhema-logo.png').default}
@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-85}
+                offset={-78}
               >
                 What We Do
               </NavLinks>
@@ -53,7 +53,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-85}
+                offset={-78}
               >
                 About Us
               </NavLinks>
@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-85}
+                offset={-78}
               >
                 Leadership
               </NavLinks>
@@ -77,7 +77,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-85}
+                offset={-78}
               >
                 Corporate Strategy
               </NavLinks>
@@ -89,7 +89,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-85}
+                offset={-78}
               >
                 Contact Us
               </NavLinks>

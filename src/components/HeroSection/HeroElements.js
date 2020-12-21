@@ -47,7 +47,7 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: var(--grey);
+  background: var(--light-grey);
 `
 
 export const HeroContent = styled.div`

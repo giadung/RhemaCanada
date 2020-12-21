@@ -61,7 +61,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
-  animation: 1s ease-out 0s 1 SlideUp;
+  animation: 1s ease-out 0s 1 slideUp;
 
   @media screen and (max-width: 1024px) {
     bottom: 7%;
@@ -86,7 +86,7 @@ export const HeroH1 = styled.h1`
   font-size: 32px;
   font-weight: 700;
   text-align: left;
-  animation: 1s ease-out 0s 1 SlideUp;
+  animation: 1s ease-out 0s 1 slideUp;
 
   @media screen and (max-width: 1024px) {
     font-size: 2.5rem;
@@ -107,7 +107,7 @@ export const HeroP = styled.p`
   font-size: 1rem;
   line-height: 1.4;
   max-width: 600px;
-  animation: 1s ease-out 0s 1 SlideUp;
+  animation: 1s ease-out 0s 1 slideUp;
 
   @media screen and (max-width: 1024px) {
     font-size: 1.5rem;

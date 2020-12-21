@@ -62,7 +62,7 @@ export const ServicesCard = styled.a`
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  animation: 1s ease-out 0s 1 SlideUp;
+  animation: 1s ease-out 0s 1 slideUp;
 
   &:hover {
     transform: scale(1.02);

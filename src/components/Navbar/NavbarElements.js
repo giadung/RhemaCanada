@@ -20,8 +20,8 @@ export const Nav = styled.nav`
   }
 
   @media screen and (max-width: 480x) {
-    height: 60px;
-    margin-top: -60px;
+    height: 40px;
+    margin-top: -40px;
   }
 `
 

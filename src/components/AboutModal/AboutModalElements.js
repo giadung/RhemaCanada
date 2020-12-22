@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { MdClose } from 'react-icons/md'
 
 export const Background = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
@@ -22,7 +22,7 @@ export const Background = styled.div`
 export const ModalContainer = styled.div`
   width: 720px;
   height: auto;
-  max-height: 80%;
+  max-height: 80vh;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: var(--text-color);
@@ -32,10 +32,7 @@ export const ModalContainer = styled.div`
   overflow: auto;
 
   @media screen and (max-width: 480px) {
-    margin: auto;
-    display: block;
-    width: 90%;
-    max-height: 720px;
+    max-width: 90vw;
     padding: 50px 40px 40px 40px;
   }
 `

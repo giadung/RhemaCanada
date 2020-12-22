@@ -12,6 +12,11 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 5;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const ModalContainer = styled.div`
@@ -24,10 +29,13 @@ export const ModalContainer = styled.div`
   position: relative;
   border-radius: 10px;
   padding: 60px 70px 70px 70px;
-  overflow-y: auto;
+  overflow: auto;
 
   @media screen and (max-width: 480px) {
-    max-width: 90%;
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-height: 720px;
     padding: 50px 40px 40px 40px;
   }
 `

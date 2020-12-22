@@ -50,7 +50,7 @@ export const FeedbackWrapper = styled.div`
 
     :focus {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      border: 1px solid var(--blue);
+      border: 1px solid var(--dark-blue);
       outline: 0;
     }
   }

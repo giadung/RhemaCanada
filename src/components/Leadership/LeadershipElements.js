@@ -21,16 +21,6 @@ export const LeadershipContainer = styled.div`
     height: 100%;
     padding: 90px 0;
   }
-
-  @media screen and (max-width: 768px) {
-    height: 100%;
-    padding: 90px 0;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 100%;
-    padding: 90px 0;
-  }
 `
 
 export const LeadershipH1 = styled.h1`

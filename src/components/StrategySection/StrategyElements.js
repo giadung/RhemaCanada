@@ -12,16 +12,6 @@ export const StrategyContainer = styled.div`
     height: 100%;
     padding-top: 90px;
   }
-
-  @media screen and (max-width: 768px) {
-    height: 100%;
-    padding-top: 90px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 100%;
-    padding-top: 90px;
-  }
 `
 
 export const StrategyWrapper = styled.div`

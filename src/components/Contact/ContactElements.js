@@ -11,11 +11,6 @@ export const ContactContainer = styled.div`
     height: 100%;
     padding-top: 90px;
   }
-
-  @media screen and (max-width: 768px) {
-    padding-top: 90px;
-    height: 100%;
-  }
 `
 
 export const ContactH1 = styled.h1`

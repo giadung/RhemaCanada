@@ -13,11 +13,6 @@ export const FeedbackContainer = styled.div`
     height: 100%;
     padding: 90px 0;
   }
-
-  @media screen and (max-width: 480px) {
-    height: 100%;
-    padding: 90px 0;
-  }
 `
 
 export const FeedbackH1 = styled.h1`
@@ -39,7 +34,7 @@ export const FeedbackWrapper = styled.div`
   width: 600px;
 
   @media screen and (max-width: 480px) {
-    max-width: 90%;
+    max-width: 90vw;
   }
 
   p {

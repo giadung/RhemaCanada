@@ -1,4 +1,5 @@
 import React from 'react'
+import FeedbackForm from '../FeedbackForm'
 import {
   FeedbackContainer,
   FeedbackH1,
@@ -9,7 +10,9 @@ const Feedback = () => {
   return (
     <FeedbackContainer>
       <FeedbackH1>Give Feedback</FeedbackH1>
-      <FeedbackWrapper></FeedbackWrapper>
+      <FeedbackWrapper>
+        <FeedbackForm />
+      </FeedbackWrapper>
     </FeedbackContainer>
   )
 }

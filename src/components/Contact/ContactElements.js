@@ -37,7 +37,7 @@ export const ContactH2 = styled.h2`
     bottom: 0;
     left: 0;
     width: 20%;
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
   }
 `
 

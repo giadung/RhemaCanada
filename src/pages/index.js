@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import About from '../components/About'
+import Contact from '../components/Contact'
+import Feedback from '../components/Feedback'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Leadership from '../components/Leadership'
@@ -25,6 +27,8 @@ const Home = () => {
       <About />
       <Leadership />
       <StrategySection {...strategyObj} />
+      <Contact />
+      <Feedback />
       <Footer />
     </>
   )

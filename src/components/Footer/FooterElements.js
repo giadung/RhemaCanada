@@ -19,4 +19,5 @@ export const FooterContainer = styled.div`
 
 export const FooterP = styled.p`
   color: var(--dark-grey);
+  font-size: 15px;
 `

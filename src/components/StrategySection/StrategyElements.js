@@ -25,6 +25,7 @@ export const StrategyWrapper = styled.div`
 
   @media screen and (max-width: 480px) {
     height: 100%;
+    grid-gap: 0;
   }
 `
 
@@ -40,7 +41,6 @@ export const Column1 = styled.div`
 `
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
   grid-area: col2;
 `
 

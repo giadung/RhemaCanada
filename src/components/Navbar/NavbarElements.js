@@ -4,6 +4,7 @@ import { Link as LinkS } from 'react-scroll'
 export const Nav = styled.nav`
   background: #fff;
   /* background-color: rgba(255, 255, 255, 0.6); */
+  width: 100vw;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -18,34 +19,21 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-
-  @media screen and (max-width: 480px) {
-    height: 60px;
-    margin-top: -60px;
-  }
 `
 
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 100%;
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
-
-  @media screen and (max-width: 480px) {
-    padding: 0 10px;
-  }
 `
 
 export const NavLogo = styled(LinkS)`
   cursor: pointer;
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 480px) {
-    margin: auto 0;
-  }
 `
 
 export const MobileIcon = styled.div`
@@ -61,10 +49,6 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #000;
   }
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.2rem;
-  }
 `
 
 export const NavMenu = styled.ul`
@@ -79,7 +63,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 100%;
 `
 
 export const NavLinks = styled(LinkS)`

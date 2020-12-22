@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const StrategyContainer = styled.div`
   height: 870px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: ${({ lightBg }) => (lightBg ? '#fff' : 'var(--light-grey)')};
 
   @media screen and (max-width: 1024px) {

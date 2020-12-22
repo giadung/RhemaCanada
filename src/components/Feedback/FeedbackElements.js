@@ -11,6 +11,16 @@ export const FeedbackContainer = styled.div`
 export const FeedbackH1 = styled.h1`
   color: #fff;
   margin-top: 120px;
+  position: relative;
+
+  :before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 33%;
+    border-bottom: 1px solid #fff;
+  }
 `
 
 export const FeedbackWrapper = styled.div``

@@ -78,13 +78,8 @@ export const ModalLi = styled.li`
 export const CloseModalButton = styled(MdClose)`
   cursor: pointer;
   position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 32px;
-  height: 32px;
-
-  @media screen and (max-width: 480px) {
-    top: 10px;
-    right: 10px;
-  }
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
 `

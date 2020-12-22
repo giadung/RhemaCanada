@@ -6,11 +6,25 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    padding-top: 90px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 90px;
+    height: 100%;
+  }
 `
 
 export const ContactH1 = styled.h1`
   color: var(--dark-grey);
   margin-bottom: 64px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 `
 
 export const ContactWrapper = styled.div`
@@ -18,6 +32,14 @@ export const ContactWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   border: 1px solid var(--grey);
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const TextWrapper = styled.div`
@@ -71,6 +93,10 @@ export const ContactLi = styled.li`
 
 export const MapWrapper = styled.div`
   height: 100%;
+
+  @media screen and (max-width: 480px) {
+    height: 400px;
+  }
 
   iframe {
     width: 100%;

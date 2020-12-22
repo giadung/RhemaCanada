@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,5 +19,5 @@ export const FooterContainer = styled.div`
 
 export const FooterP = styled.p`
   color: var(--dark-grey);
-  font-size: 15px;
+  font-size: 14px;
 `

@@ -17,8 +17,19 @@ export const LeadershipContainer = styled.div`
     border-top: 1px solid var(--grey);
   }
 
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    padding: 90px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    padding: 90px 0;
+  }
+
   @media screen and (max-width: 480px) {
-    padding-top: 120px;
+    height: 100%;
+    padding: 90px 0;
   }
 `
 
@@ -54,6 +65,14 @@ export const LeadershipWrapper = styled.div`
     border: solid var(--grey);
     border-width: 1px 1px 0 1px;
     border-radius: 10px 10px 0 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 
   @media screen and (max-width: 480px) {

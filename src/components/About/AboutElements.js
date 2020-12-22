@@ -9,20 +9,29 @@ export const AboutContainer = styled.div`
   /* background: linear-gradient(#008adb 60%, transparent 60%) no-repeat; */
   box-shadow: 0 500px 0 0 var(--blue) inset;
 
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    padding: 90px 0;
+  }
+
   @media screen and (max-width: 768px) {
     height: 100%;
-    margin-bottom: 70px;
+    padding: 90px 0;
   }
 
   @media screen and (max-width: 480px) {
     height: 100%;
-    margin-bottom: 70px;
+    padding: 90px 0;
   }
 `
 
 export const AboutH1 = styled.h1`
   margin-bottom: 64px;
   color: #fff;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 40px;
+  }
 `
 
 export const AboutWrapper = styled.div`

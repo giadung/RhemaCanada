@@ -1,15 +1,26 @@
 import styled from 'styled-components'
 
 export const StrategyContainer = styled.div`
+  height: 870px;
   background: ${({ lightBg }) => (lightBg ? '#fff' : 'var(--light-grey)')};
 
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    padding-top: 90px;
+  }
+
   @media screen and (max-width: 768px) {
-    padding: 100px 0 0 0;
+    height: 100%;
+    padding-top: 90px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+    padding-top: 90px;
   }
 `
 
 export const StrategyWrapper = styled.div`
-  height: 870px;
   width: 100%;
   display: grid;
   grid-template-columns: 7fr 5fr;

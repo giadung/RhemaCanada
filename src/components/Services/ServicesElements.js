@@ -10,15 +10,19 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
-    padding-top: 125px;
+  @media screen and (max-width: 1024px) {
     height: 100%;
-    margin-bottom: 70px;
+    padding: 90px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    padding: 90px 0;
   }
 
   @media screen and (max-width: 480px) {
     height: 100%;
-    margin-bottom: 70px;
+    padding: 90px 0;
   }
 `
 
@@ -37,7 +41,7 @@ export const ServicesWrapper = styled.div`
   padding: 0 50px;
 
   @media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media screen and (max-width: 768px) {

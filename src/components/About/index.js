@@ -40,7 +40,7 @@ const About = () => {
             At Rhema we seek to change lives through:
             <br /> ... <br />
             <br />
-            <u>Learn More</u>
+            <u>Learn More &gt;&gt;</u>
           </AboutP>
         </AboutCard>
         <AboutModal showModal={showModal} setShowModal={setShowModal} />
@@ -51,7 +51,7 @@ const About = () => {
             informing our behavior in the world; our holistic values promote
             life at its very best and they define how we live: <br /> ... <br />
             <br />
-            <u>Learn More</u>
+            <u>Learn More &gt;&gt;</u>
           </AboutP>
         </AboutCard>
       </AboutWrapper>

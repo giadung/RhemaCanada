@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const LeadershipContainer = styled.div`
   height: 870px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +35,7 @@ export const LeadershipH1 = styled.h1`
 `
 
 export const LeadershipWrapper = styled.div`
-  width: 1200px;
+  max-width: 1200px;
 
   .tab-list {
     border-bottom: 1px solid var(--grey);
@@ -58,14 +59,6 @@ export const LeadershipWrapper = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 480px) {
     width: 100%;
 
     .tab-list-item {

@@ -34,7 +34,7 @@ export const FeedbackWrapper = styled.div`
   width: 600px;
 
   @media screen and (max-width: 480px) {
-    max-width: 90vw;
+    max-width: 90%;
   }
 
   p {

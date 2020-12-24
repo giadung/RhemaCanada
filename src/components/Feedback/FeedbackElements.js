@@ -26,7 +26,7 @@ export const FeedbackH1 = styled.h1`
     bottom: 0;
     left: 0;
     width: 33%;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
   }
 `
 

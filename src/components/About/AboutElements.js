@@ -44,7 +44,6 @@ export const AboutWrapper = styled.div`
 
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
   }
 `
 

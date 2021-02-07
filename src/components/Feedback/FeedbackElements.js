@@ -47,6 +47,7 @@ export const FeedbackWrapper = styled.div`
     padding: 10px 10px;
     border: 1px solid var(--grey);
     border-radius: 5px;
+    margin-bottom: 20px;
 
     :focus {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);

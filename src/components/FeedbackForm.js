@@ -17,20 +17,9 @@ export default class FeedbackForm extends Component {
         action='https://formspree.io/f/xnqoojkn'
         method='POST'
       >
-        <p>
-          <input
-            type='text'
-            name='Full Name'
-            placeholder='Full name'
-            required
-          />
-        </p>
-        <p>
-          <input type='email' name='Email' placeholder='Email' required />
-        </p>
-        <p>
-          <textarea name='Message' rows='10' placeholder='Message' required />
-        </p>
+        <input type='text' name='Full Name' placeholder='Full name' required />
+        <input type='email' name='Email' placeholder='Email' required />
+        <textarea name='Message' rows='10' placeholder='Message' required />
         {status === 'SUCCESS' ? (
           <p>Thank you for your feedback!</p>
         ) : (

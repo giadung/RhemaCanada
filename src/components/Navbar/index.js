@@ -11,6 +11,7 @@ import {
   NavLogo,
   NavMenu
 } from './NavbarElements'
+import Logo from '../../images/rhema-logo.png'
 
 const Navbar = ({ toggle }) => {
   return (
@@ -26,7 +27,7 @@ const Navbar = ({ toggle }) => {
             offset={-77}
           >
             <img
-              src={require('../../images/rhema-logo.png').default}
+              src={Logo}
               alt='Rhema Canada'
             />
           </NavLogo>
